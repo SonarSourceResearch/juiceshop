@@ -14,7 +14,7 @@ import { faHome, faSync, faTruck, faTruckLoading, faWarehouse } from '@fortaweso
 library.add(faWarehouse, faSync, faTruckLoading, faTruck, faHome)
 dom.watch()
 
-export enum Status {
+enum Status {
   New,
   Packing,
   Transit,
@@ -37,7 +37,7 @@ export class TrackResultComponent implements OnInit {
 
   ngOnInit () {
     this.orderId = this.route.snapshot.queryParams.id
-    this.trackOrderService.find(this.orderId).subscribe((results) => {
+    this.trackOrderService.save(this.orderId).subscribe((results) => {
       // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
       this.results.orderNo = this.sanitizer.bypassSecurityTrustHtml(`<code>${results.data[0].orderId}</code>`)
       this.results.email = results.data[0].email

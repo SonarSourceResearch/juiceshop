@@ -219,12 +219,13 @@ accordingly.
 
 | node.js | Supported            | Tested             | [Packaged Distributions](#packaged-distributions) | [Docker images](#docker-container) from `master`        | [Docker images](#docker-container) from `develop`         |
 |:--------|:---------------------|:-------------------|:--------------------------------------------------|:--------------------------------------------------------|:----------------------------------------------------------|
-| 16.x    | :x:                  | :x:                |                                                   |                                                         |                                                           |
-| 15.x    | :heavy_check_mark:   | :heavy_check_mark: | Windows (`x64`), MacOS (`x64`), Linux (`x64`)     |                                                         |                                                           |
+| 15.x    | :x:                  | :x:                |                                                   |                                                         |                                                           |
 | 14.x    | :heavy_check_mark:   | :heavy_check_mark: | Windows (`x64`), MacOS (`x64`), Linux (`x64`)     |                                                         |                                                           |
 | 13.x    | (:heavy_check_mark:) | :x:                |                                                   |                                                         |                                                           |
 | 12.x    | :heavy_check_mark:   | :heavy_check_mark: | Windows (`x64`), MacOS (`x64`), Linux (`x64`)     | `latest` (`linux/amd64`, `linux/arm/v7`, `linux/arm64`) | `snapshot` (`linux/amd64`, `linux/arm/v7`, `linux/arm64`) |
-| <12.x   | :x:                  | :x:                |                                                   |                                                         |                                                           |
+| 11.x    | (:heavy_check_mark:) | :x:                |                                                   |                                                         |                                                           |
+| 10.x    | :heavy_check_mark:   | :heavy_check_mark: | Windows (`x64`), MacOS (`x64`), Linux (`x64`)     |                                                         |                                                           |
+| <10.x   | :x:                  | :x:                |                                                   |                                                         |                                                           |
 
 Juice Shop is automatically tested _only on the latest `.x` minor
 version_ of each node.js version mentioned above! There is no guarantee
@@ -247,7 +248,7 @@ questions!**
 
 ### Official companion guide
 
-[![Write Goodreads Review](https://img.shields.io/badge/goodreads-write%20review-49557240.svg)](https://www.goodreads.com/review/edit/49557240)
+[![Write Goodreads Review](https://img.shields.io/badge/goodreads-write%20review-47129532.svg)](https://www.goodreads.com/review/edit/47129532)
 
 OWASP Juice Shop comes with an official companion guide eBook. It will
 give you a complete overview of all vulnerabilities found in the

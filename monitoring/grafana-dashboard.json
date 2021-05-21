@@ -16,7 +16,7 @@
   "gnetId": null,
   "graphTooltip": 0,
   "id": 7,
-  "iteration": 1612550073156,
+  "iteration": 1600870228619,
   "links": [],
   "panels": [
     {
@@ -203,7 +203,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1612550073156,
+      "repeatIteration": 1600870228619,
       "repeatPanelId": 2,
       "scopedVars": {
         "difficulties": {
@@ -309,7 +309,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1612550073156,
+      "repeatIteration": 1600870228619,
       "repeatPanelId": 2,
       "scopedVars": {
         "difficulties": {
@@ -415,7 +415,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1612550073156,
+      "repeatIteration": 1600870228619,
       "repeatPanelId": 2,
       "scopedVars": {
         "difficulties": {
@@ -521,7 +521,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1612550073156,
+      "repeatIteration": 1600870228619,
       "repeatPanelId": 2,
       "scopedVars": {
         "difficulties": {
@@ -627,7 +627,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1612550073156,
+      "repeatIteration": 1600870228619,
       "repeatPanelId": 2,
       "scopedVars": {
         "difficulties": {
@@ -697,8 +697,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 5,
-        "w": 20,
+        "h": 4,
+        "w": 24,
         "x": 0,
         "y": 5
       },
@@ -765,102 +765,13 @@
       "type": "stat"
     },
     {
-      "cacheTimeout": null,
-      "colorBackground": false,
-      "colorValue": true,
-      "colors": [
-        "#299c46",
-        "rgba(237, 129, 40, 0.89)",
-        "#d44a3a"
-      ],
-      "datasource": null,
-      "decimals": null,
-      "description": "",
-      "format": "percentunit",
-      "gauge": {
-        "maxValue": 100,
-        "minValue": 0,
-        "show": false,
-        "thresholdLabels": false,
-        "thresholdMarkers": true
-      },
-      "gridPos": {
-        "h": 5,
-        "w": 4,
-        "x": 20,
-        "y": 5
-      },
-      "id": 112,
-      "interval": null,
-      "links": [],
-      "mappingType": 1,
-      "mappingTypes": [
-        {
-          "name": "value to text",
-          "value": 1
-        },
-        {
-          "name": "range to text",
-          "value": 2
-        }
-      ],
-      "maxDataPoints": 100,
-      "nullPointMode": "connected",
-      "nullText": null,
-      "pluginVersion": "6.7.3",
-      "postfix": "",
-      "postfixFontSize": "50%",
-      "prefix": "",
-      "prefixFontSize": "50%",
-      "rangeMaps": [
-        {
-          "from": "null",
-          "text": "N/A",
-          "to": "null"
-        }
-      ],
-      "sparkline": {
-        "fillColor": "rgba(31, 118, 189, 0.18)",
-        "full": false,
-        "lineColor": "rgb(31, 120, 193)",
-        "show": true,
-        "ymax": null,
-        "ymin": null
-      },
-      "tableColumn": "",
-      "targets": [
-        {
-          "expr": "juiceshop_cheat_score",
-          "instant": false,
-          "interval": "1m",
-          "intervalFactor": 1,
-          "legendFormat": "",
-          "refId": "A"
-        }
-      ],
-      "thresholds": "0.33,0.66",
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Cheat Score",
-      "type": "singlestat",
-      "valueFontSize": "80%",
-      "valueMaps": [
-        {
-          "op": "=",
-          "text": "N/A",
-          "value": "null"
-        }
-      ],
-      "valueName": "current"
-    },
-    {
       "collapsed": true,
       "datasource": null,
       "gridPos": {
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 10
+        "y": 9
       },
       "id": 32,
       "panels": [
@@ -876,7 +787,7 @@
             "h": 5,
             "w": 24,
             "x": 0,
-            "y": 11
+            "y": 10
           },
           "hiddenSeries": false,
           "id": 11,
@@ -965,7 +876,7 @@
             "h": 6,
             "w": 9,
             "x": 0,
-            "y": 16
+            "y": 15
           },
           "hiddenSeries": false,
           "id": 64,
@@ -1064,7 +975,7 @@
             "h": 6,
             "w": 4,
             "x": 9,
-            "y": 16
+            "y": 15
           },
           "id": 97,
           "interval": null,
@@ -1153,7 +1064,7 @@
             "h": 6,
             "w": 5,
             "x": 13,
-            "y": 16
+            "y": 15
           },
           "id": 98,
           "interval": null,
@@ -1241,7 +1152,7 @@
             "h": 3,
             "w": 6,
             "x": 18,
-            "y": 16
+            "y": 15
           },
           "id": 13,
           "interval": null,
@@ -1325,7 +1236,7 @@
             "h": 3,
             "w": 6,
             "x": 18,
-            "y": 19
+            "y": 18
           },
           "id": 14,
           "interval": null,
@@ -1397,7 +1308,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 11
+        "y": 10
       },
       "id": 39,
       "panels": [],
@@ -1423,7 +1334,7 @@
         "h": 6,
         "w": 24,
         "x": 0,
-        "y": 12
+        "y": 11
       },
       "hiddenSeries": false,
       "id": 71,
@@ -1550,7 +1461,7 @@
         "h": 5,
         "w": 9,
         "x": 0,
-        "y": 18
+        "y": 17
       },
       "id": 90,
       "links": [],
@@ -1638,7 +1549,7 @@
         "h": 5,
         "w": 15,
         "x": 9,
-        "y": 18
+        "y": 17
       },
       "id": 91,
       "links": [],
@@ -1719,7 +1630,7 @@
         "h": 6,
         "w": 24,
         "x": 0,
-        "y": 23
+        "y": 22
       },
       "id": 105,
       "options": {
@@ -1792,7 +1703,7 @@
         "h": 10,
         "w": 9,
         "x": 0,
-        "y": 29
+        "y": 28
       },
       "hiddenSeries": false,
       "id": 46,
@@ -1899,7 +1810,7 @@
         "h": 10,
         "w": 7,
         "x": 9,
-        "y": 29
+        "y": 28
       },
       "hiddenSeries": false,
       "id": 48,
@@ -2007,7 +1918,7 @@
         "h": 6,
         "w": 5,
         "x": 16,
-        "y": 29
+        "y": 28
       },
       "id": 52,
       "interval": null,
@@ -2096,7 +2007,7 @@
         "h": 3,
         "w": 3,
         "x": 21,
-        "y": 29
+        "y": 28
       },
       "id": 84,
       "interval": "",
@@ -2187,7 +2098,7 @@
         "h": 3,
         "w": 3,
         "x": 21,
-        "y": 32
+        "y": 31
       },
       "id": 50,
       "interval": "",
@@ -2269,7 +2180,7 @@
         "h": 11,
         "w": 8,
         "x": 16,
-        "y": 35
+        "y": 34
       },
       "hiddenSeries": false,
       "id": 56,
@@ -2376,7 +2287,7 @@
         "h": 7,
         "w": 16,
         "x": 0,
-        "y": 39
+        "y": 38
       },
       "hiddenSeries": false,
       "id": 54,
@@ -2571,5 +2482,5 @@
   "variables": {
     "list": []
   },
-  "version": 14
+  "version": 13
 }

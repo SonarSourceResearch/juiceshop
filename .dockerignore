@@ -3,9 +3,10 @@ monitoring/
 node_modules/
 screenshots/
 test/
-build/reports/
+build/
 dist/
 vagrant/
+docs/
 logs/
 Dockerfile
 .npmrc

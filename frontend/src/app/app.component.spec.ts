@@ -33,7 +33,6 @@ import { MatDialogModule } from '@angular/material/dialog'
 import { LoginGuard } from './app.guard'
 import { MatInputModule } from '@angular/material/input'
 import { MatSnackBarModule } from '@angular/material/snack-bar'
-import { CookieModule } from 'ngx-cookie'
 
 describe('AppComponent', () => {
   let app: AppComponent
@@ -52,7 +51,6 @@ describe('AppComponent', () => {
         HttpClientTestingModule,
         RouterTestingModule,
         MatToolbarModule,
-        CookieModule.forRoot(),
         TranslateModule.forRoot(),
         ClipboardModule,
         MatIconModule,

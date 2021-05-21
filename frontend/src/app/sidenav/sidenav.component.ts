@@ -10,7 +10,7 @@ import { SocketIoService } from '../Services/socket-io.service'
 import { AdministrationService } from '../Services/administration.service'
 import { Router } from '@angular/router'
 import { UserService } from '../Services/user.service'
-import { CookieService } from 'ngx-cookie'
+import { CookieService } from 'ngx-cookie-service'
 import { ConfigurationService } from '../Services/configuration.service'
 import { LoginGuard } from '../app.guard'
 import { roles } from '../roles'
@@ -26,9 +26,11 @@ export class SidenavComponent implements OnInit {
   public userEmail = ''
   public scoreBoardVisible: boolean = false
   public version: string = ''
+  public isExpanded = true
   public showPrivacySubmenu: boolean = false
   public showOrdersSubmenu: boolean = false
   public isShowing = false
+  public sizeOfMail: number = 0
   public offerScoreBoardTutorial: boolean = false
 
   @Output() public sidenavToggle = new EventEmitter()
@@ -76,19 +78,14 @@ export class SidenavComponent implements OnInit {
   logout () {
     this.userService.saveLastLoginIp().subscribe((user: any) => { this.noop() }, (err) => console.log(err))
     localStorage.removeItem('token')
-    this.cookieService.remove('token')
+    this.cookieService.delete('token', '/')
     sessionStorage.removeItem('bid')
-    sessionStorage.removeItem('itemTotal')
     this.userService.isLoggedIn.next(false)
     this.ngZone.run(async () => await this.router.navigate(['/']))
   }
 
   goToProfilePage () {
     window.location.replace(environment.hostServer + '/profile')
-  }
-
-  goToDataErasurePage () {
-    window.location.replace(environment.hostServer + '/dataerasure')
   }
 
   // eslint-disable-next-line no-empty,@typescript-eslint/no-empty-function
@@ -105,6 +102,8 @@ export class SidenavComponent implements OnInit {
   getUserDetails () {
     this.userService.whoAmI().subscribe((user: any) => {
       this.userEmail = user.email
+      // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+      this.sizeOfMail = (`${user.email}`).length
     }, (err) => console.log(err))
   }
 
